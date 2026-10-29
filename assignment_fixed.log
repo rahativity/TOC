@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.16)  25 OCT 2026 23:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.16)  28 OCT 2026 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,7 +1224,7 @@ Here is how much of TeX's memory you used:
  667642 string characters out of 5418375
  1143902 words of memory out of 5000000
  61155 multiletter control sequences out of 15000+600000
- 737408 words of font info for 258 fonts, out of 8000000 for 9000
+ 737414 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,13n,94p,1015b,859s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/rahat/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
@@ -1241,7 +1241,7 @@ sers/rahat/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/U
 sers/rahat/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/U
 sers/rahat/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/U
 sers/rahat/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on assignment_fixed.pdf (28 pages, 571419 bytes).
+Output written on assignment_fixed.pdf (28 pages, 571445 bytes).
 PDF statistics:
  595 PDF objects out of 1000 (max. 8388607)
  146 named destinations out of 1000 (max. 500000)

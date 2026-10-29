@@ -307,7 +307,7 @@ To illustrate the concrete application of this artifact, Table~\ref{tab:test_pla
 \centering
 \footnotesize
 \renewcommand{\arraystretch}{1.2}
-\begin{tabularx}{\textwidth}{|L{3.0cm}|L{2.6cm}|Y|L{3.0cm}|}
+\begin{tabularx}{\textwidth}{|L{3.1cm}|L{2.9cm}|L{4.3cm}|Y|}
 \hline
 \rowcolor{tableHeader}
 \multicolumn{4}{|c|}{\textbf{\normalsize FORMAL SOFTWARE TEST PLAN EXECUTION SHEET}} \\
@@ -318,7 +318,7 @@ To illustrate the concrete application of this artifact, Table~\ref{tab:test_pla
 \hline
 \textbf{Test Case ID:} & TC-AUTH-008 & \textbf{Requirement Addressed:} & SRS-SEC-014 (MFA Enforcement) \\
 \hline
-\textbf{Test Objective:} & \multicolumn{3}{Y|}{Verify that accounts with Multi-Factor Authentication (MFA) enabled reject valid primary credentials when provided with an invalid or expired Time-Based One-Time Password (TOTP) token.} \\
+\textbf{Test Objective:} & \multicolumn{3}{>{\raggedright\arraybackslash}p{\dimexpr\textwidth-3.1cm-4\tabcolsep-3\arrayrulewidth\relax}|}{Verify that accounts with Multi-Factor Authentication (MFA) enabled reject valid primary credentials when provided with an invalid or expired Time-Based One-Time Password (TOTP) token.} \\
 \hline
 \rowcolor{lightBg}
 \multicolumn{4}{|c|}{\textbf{Test Input Matrix and Parameter Grid}} \\
@@ -333,16 +333,16 @@ UI-LOGIN-FLD-03 & \texttt{mfa\_totp\_code} & \texttt{849201} (Expired 90s prior)
 \rowcolor{lightBg}
 \multicolumn{4}{|c|}{\textbf{Execution Script, Expected Outcomes, and Observed Deviations}} \\
 \hline
-\multicolumn{4}{|p{0.96\textwidth}|}{\textbf{Step-by-Step Execution Script:} \newline
+\multicolumn{4}{|>{\raggedright\arraybackslash}p{\dimexpr\textwidth-2\tabcolsep-2\arrayrulewidth\relax}|}{\textbf{Step-by-Step Execution Script:} \newline
 1. Navigate to endpoint \texttt{/auth/login} using HTTPS. \newline
 2. Inject valid credentials into fields \texttt{user\_identity} and \texttt{user\_password}; submit form. \newline
 3. Confirm system transitions state to \texttt{CHALLENGE\_MFA} and displays modal dialog. \newline
 4. Inject \texttt{000000} into the token field and press \texttt{Verify}. \newline
 5. Observe HTTP response status code, JSON error payload, and front-end alert rendering.} \\
 \hline
-\textbf{Expected Results:} & \multicolumn{3}{Y|}{System must return HTTP 401 Unauthorized, payload \texttt{\{"error":} \texttt{"INVALID\_}\allowbreak\texttt{MFA\_TOKEN"\}}, increment failed attempt counter by 1, and prompt user with ``Invalid security token.''} \\
+\textbf{Expected Results:} & \multicolumn{3}{>{\raggedright\arraybackslash}p{\dimexpr\textwidth-3.1cm-4\tabcolsep-3\arrayrulewidth\relax}|}{System must return HTTP 401 Unauthorized, payload \texttt{\{"error":} \texttt{"INVALID\_}\allowbreak\texttt{MFA\_TOKEN"\}}, increment failed attempt counter by 1, and prompt user with ``Invalid security token.''} \\
 \hline
-\textbf{Observed Results:} & \multicolumn{3}{Y|}{HTTP 401 returned. Token rejected. Counter incremented accurately. No session cookie emitted. Observed behavior matches SRS-SEC-014 completely.} \\
+\textbf{Observed Results:} & \multicolumn{3}{>{\raggedright\arraybackslash}p{\dimexpr\textwidth-3.1cm-4\tabcolsep-3\arrayrulewidth\relax}|}{HTTP 401 returned. Token rejected. Counter incremented accurately. No session cookie emitted. Observed behavior matches SRS-SEC-014 completely.} \\
 \hline
 \end{tabularx}
 \caption{Production-Grade Standardized Test Plan Artifact Specimen.}
